@@ -1,14 +1,17 @@
 """
-@Author: wei
-@Date: 2020-05-18 20:35:53
-@LastEditors: wei
-@LastEditTime: 2020-05-20 15:19:05
-@Description: file content
+@Version: 2.0
+@Autor: jce2090
+@Date: 2020-05-21 23:19:02
+@LastEditors: Seven
+@LastEditTime: 2020-05-23 07:38:05
 """
+
+from __future__ import division
 import os
 import torch
 import matplotlib.pyplot as plt
 import seaborn as sns
+from PIL import Image
 from utils import PairwiseDistance
 from utils import get_configuration
 from networks import create_model
@@ -16,8 +19,6 @@ from dataset import create_dataset
 from networks.yolov3_model import *
 from utils.utils import *
 from utils.parse_config import *
-import torchvision.transforms.functional as F
-from PIL import Image
 from utils import ToTensor
 
 
@@ -28,7 +29,9 @@ class InferenceEngine(object):
         object {[type]} -- [description]
     """
 
-    def __init__(self, cfg, model, dataloader=None):
+    BASE_PATH = "./data/IITD/flip/ROI/test"
+
+    def __init__(self, cfg, model, dataloader=None, transform=None):
         """Initializer model
 
         Arguments:
@@ -42,13 +45,13 @@ class InferenceEngine(object):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.dataprocess = None
         self.l2_dist = PairwiseDistance()
-        self.base_path = "./data/IITD/flip/ROI/test"
+        self.transform = transform
 
-    def setup(self):
+    def setup(self, checkpoint_path):
         """Set up
         """
         print("Initializer inference model")
-        checkpoints = torch.load("./checkpoints/facenet/checkpoint_1000.pth")
+        checkpoints = torch.load(checkpoint_path)
 
         pretrained_dict = checkpoints["model"]
 
@@ -100,10 +103,8 @@ class InferenceEngine(object):
         Arguments:
             img_path {[type]} -- [description]
         """
-        img = Image.open(os.path.join(self.base_path, image_path)).convert("L")
-        img = img.resize((227, 227))
-        anchor = F.to_tensor(img).unsqueeze(0).cuda()
-        anchor = anchor - torch.mean(anchor) / 128
+        img = Image.open(os.path.join(self.BASE_PATH, image_path)).convert("L")
+        anchor = self.transform(img)
         anchor_embedding = self.model(anchor)
         self.anchor_emdedding = anchor_embedding
         print("your palmprint data has been saved")
@@ -114,10 +115,8 @@ class InferenceEngine(object):
         Arguments:
             test_img_path {[type]} -- [description]
         """
-        img = Image.open(os.path.join(self.base_path, test_img_path)).convert("L")
-        img = img.resize((227, 227))
-        test = F.to_tensor(img).unsqueeze(0).cuda()
-        test = test - torch.mean(test) / 128
+        img = Image.open(os.path.join(self.BASE_PATH, test_img_path)).convert("L")
+        test = self.transform(img)
         test_embedding = self.model(test)
 
         l2_dist = self.l2_dist(self.anchor_emdedding, test_embedding)
@@ -131,13 +130,13 @@ class InferenceEngine(object):
 
 
 if __name__ == "__main__":
-    torch.cuda.empty_cache()
     cfg = get_configuration()
     model = create_model(cfg)
     valload = create_dataset(cfg, "train", transform=ToTensor())
+    restore_path = "./checkpoints/facenet/checkpoint_1000.pth"
     # dataloader = create_dataset(cfg, 'test', transform=ToTensor())
     inference_engie = InferenceEngine(cfg, model, valload)
-    inference_engie.setup()
+    inference_engie.setup(restore_path)
     text = "=" * 80
     print("\033[33m{}\033[0m".format(text))
     # test single image
