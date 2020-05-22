@@ -2,7 +2,7 @@
 
 ​	The traditional palmprint recognition method is to extract the palmprints in the image by constructing features. This method is not accurate enough, and when the scene is not standard, such as strong light, the palm posture changes, the recognition rate will decrease，This project is an example of palmprint recognition based on deep learning, supporting custom models and data for training. The default dataset is IITD(https://www4.comp.polyu.edu.hk/~csajaykr/IITD/Database_Palm.htm), released by Indian institute of Technology.  You can see the detailed introduction and download the data set on the official website.
 
-![](.\logs\f2d368d64ebc413192be6560e533c7df\image-20200522152545541.png)
+![](logs/f2d368d64ebc413192be6560e533c7df/image-20200522152545541.png)
 
 ## Environmental needs
 
@@ -46,17 +46,17 @@ By default, model_name is facenet, dataset_name is palmprint_v1. The input image
 | :----: | :-----------: | :--: | ----- | :------------------------------: |
 |  0.5   |     False     | 1e-2 | 5000  | f2d368d64ebc413192be6560e533c7df |
 
-​	train_loss:![train_loss](.\logs\f2d368d64ebc413192be6560e533c7df\train_loss.jpeg)
+​	train_loss:![train_loss](logs/f2d368d64ebc413192be6560e533c7df/train_loss.jpeg)
 
 ​	pair distance between two classes,  red represents the distance in similar classes, green represents the distance between diffenent classes.
 
-**epoch 0:**![0](.\logs\f2d368d64ebc413192be6560e533c7df\0.PNG)
+**epoch 0:**![0](logs/f2d368d64ebc413192be6560e533c7df/0.PNG)
 
-**epoch 1000:**![1000](.\logs\f2d368d64ebc413192be6560e533c7df\1000.PNG)
+**epoch 1000:**![1000](logs/f2d368d64ebc413192be6560e533c7df/1000.PNG)
 
 **epoch 5000:**
 
-![5000](.\logs\f2d368d64ebc413192be6560e533c7df\5000.PNG)
+![5000](logs/f2d368d64ebc413192be6560e533c7df/5000.PNG)
 
 ## Todo
 
