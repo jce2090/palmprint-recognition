@@ -1,0 +1,260 @@
+14-53-2020 12:53:34 root:INFO:{'dataset_name': 'palmprint', 'model_name': 'alexnet', 'lr': 0.001, 'resume': False, 'batch_size': 2}
+14-13-2020 13:13:35 root:INFO:{'dataset_name': 'palmprint', 'batch_size': 2, 'resume': False, 'model_name': 'alexnet', 'lr': 0.001}
+14-14-2020 13:14:19 root:INFO:{'batch_size': 2, 'lr': 0.001, 'dataset_name': 'palmprint', 'resume': False, 'model_name': 'alexnet'}
+14-15-2020 13:15:14 root:INFO:{'batch_size': 2, 'lr': 0.001, 'dataset_name': 'palmprint', 'resume': False, 'model_name': 'alexnet'}
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Conv2d(1, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module AdaptiveAvgPool2d(output_size=(6, 6))
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Dropout(p=0.5, inplace=False)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Linear(in_features=9216, out_features=4096, bias=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Dropout(p=0.5, inplace=False)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Linear(in_features=4096, out_features=4096, bias=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-15-2020 13:15:22 thop.profile:INFO:Register FLOP counter for module Linear(in_features=4096, out_features=128, bias=True)
+14-15-2020 13:15:23 root:INFO:model: alexnet, flops: 720185920.0, params: 57512768.0
+14-18-2020 05:18:47 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-18-2020 05:18:53 root:INFO:model: alexnet, flops: 665135680.0, params: 57512768.0
+14-26-2020 05:26:33 root:INFO:{'lr': 0.001, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-26-2020 05:26:39 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+14-53-2020 13:53:06 root:INFO:{'batch_size': 2, 'dataset_name': 'palmprint', 'resume': False, 'model_name': 'alexnet', 'lr': 0.001}
+14-05-2020 14:05:01 root:INFO:{'lr': 0.001, 'dataset_name': 'palmprint', 'resume': False, 'batch_size': 2, 'model_name': 'alexnet'}
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Conv2d(1, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module AdaptiveAvgPool2d(output_size=(6, 6))
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Dropout(p=0.5, inplace=False)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Linear(in_features=9216, out_features=4096, bias=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Dropout(p=0.5, inplace=False)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Linear(in_features=4096, out_features=4096, bias=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module ReLU(inplace=True)
+14-05-2020 14:05:02 thop.profile:INFO:Register FLOP counter for module Linear(in_features=4096, out_features=128, bias=True)
+14-05-2020 14:05:03 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+14-46-2020 06:46:49 root:INFO:{'lr': 0.001, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-49-2020 06:49:25 root:INFO:{'lr': 0.001, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-49-2020 06:49:26 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+14-03-2020 07:03:34 root:INFO:{'lr': 0.001, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-03-2020 07:03:35 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+14-41-2020 07:41:43 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprint', 'resume': False}
+14-41-2020 07:41:44 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+16-40-2020 17:40:13 root:INFO:{'resume': False, 'batch_size': 2, 'model_name': 'alexnet', 'lr': 0.01, 'dataset_name': 'palmprint'}
+16-41-2020 17:41:32 root:INFO:{'resume': False, 'lr': 0.01, 'batch_size': 2, 'dataset_name': 'palmprint', 'model_name': 'alexnet'}
+16-42-2020 17:42:57 root:INFO:{'model_name': 'alexnet', 'batch_size': 2, 'dataset_name': 'palmprint', 'resume': False, 'lr': 0.01}
+16-44-2020 17:44:23 root:INFO:{'model_name': 'alexnet', 'batch_size': 2, 'resume': False, 'lr': 0.01, 'dataset_name': 'cifar10'}
+16-46-2020 17:46:07 root:INFO:{'lr': 0.01, 'batch_size': 2, 'resume': False, 'model_name': 'alexnet', 'dataset_name': 'cifar10'}
+16-47-2020 17:47:36 root:INFO:{'resume': False, 'batch_size': 2, 'dataset_name': 'cifar10', 'model_name': 'alexnet', 'lr': 0.01}
+16-55-2020 17:55:48 root:INFO:{'lr': 0.01, 'model_name': 'alexnet', 'dataset_name': 'cifar10', 'resume': False, 'batch_size': 2}
+16-00-2020 18:00:45 root:INFO:{'dataset_name': 'cifar10', 'model_name': 'alexnet', 'resume': False, 'lr': 0.01, 'batch_size': 2}
+16-04-2020 18:04:30 root:INFO:{'dataset_name': 'cifar10', 'batch_size': 2, 'resume': False, 'lr': 0.01, 'model_name': 'alexnet'}
+16-09-2020 18:09:06 root:INFO:{'dataset_name': 'cifar10', 'batch_size': 2, 'model_name': 'alexnet', 'lr': 0.01, 'resume': False}
+16-10-2020 18:10:32 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+16-47-2020 19:47:16 root:INFO:{'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'cifar10', 'resume': False, 'lr': 0.01}
+16-47-2020 19:47:37 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+17-36-2020 07:36:34 root:INFO:{'model_name': 'alexnet', 'batch_size': 2, 'lr': 0.01, 'resume': False, 'dataset_name': 'cifar10'}
+17-36-2020 07:36:42 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+17-19-2020 08:19:36 root:INFO:{'model_name': 'alexnet', 'lr': 0.01, 'batch_size': 2, 'resume': False, 'dataset_name': 'cifar10'}
+17-19-2020 08:19:49 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+17-21-2020 08:21:40 root:INFO:{'batch_size': 2, 'dataset_name': 'cifar10', 'model_name': 'alexnet', 'resume': False, 'lr': 0.01}
+17-21-2020 08:21:53 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+17-58-2020 08:58:28 root:INFO:{'resume': False, 'dataset_name': 'cifar10', 'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet'}
+17-58-2020 08:58:45 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+18-58-2020 05:58:23 root:INFO:{'batch_size': 2, 'lr': 0.01, 'dataset_name': 'palmprintv1', 'model_name': 'alexnet', 'resume': False}
+18-59-2020 05:59:44 root:INFO:{'dataset_name': 'palmprintv1', 'model_name': 'alexnet', 'resume': False, 'lr': 0.01, 'batch_size': 2}
+18-02-2020 06:02:36 root:INFO:{'resume': False, 'batch_size': 2, 'lr': 0.01, 'model_name': 'alexnet', 'dataset_name': 'palmprintv1'}
+18-03-2020 06:03:36 root:INFO:{'dataset_name': 'palmprintv1', 'batch_size': 2, 'lr': 0.01, 'resume': False, 'model_name': 'alexnet'}
+18-05-2020 06:05:09 root:INFO:{'batch_size': 2, 'resume': False, 'dataset_name': 'palmprintv1', 'lr': 0.01, 'model_name': 'alexnet'}
+18-06-2020 06:06:13 root:INFO:{'batch_size': 2, 'resume': False, 'lr': 0.01, 'dataset_name': 'palmprintv1', 'model_name': 'alexnet'}
+18-07-2020 06:07:24 root:INFO:{'model_name': 'alexnet', 'dataset_name': 'palmprintv1', 'batch_size': 2, 'lr': 0.01, 'resume': False}
+18-09-2020 06:09:16 root:INFO:{'batch_size': 2, 'resume': False, 'dataset_name': 'palmprintv1', 'lr': 0.01, 'model_name': 'alexnet'}
+18-10-2020 06:10:44 root:INFO:model: alexnet, flops: 0.72018592, params: 57.512768
+17-12-2020 23:12:44 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprintv1', 'resume': False}
+17-13-2020 23:13:02 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+17-14-2020 23:14:41 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprintv1', 'resume': False}
+17-14-2020 23:14:42 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+17-17-2020 23:17:18 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprintv1', 'resume': False}
+17-17-2020 23:17:19 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+17-24-2020 23:24:59 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'alexnet', 'dataset_name': 'palmprintv1', 'resume': False}
+17-25-2020 23:25:00 root:INFO:model: alexnet, flops: 0.66513568, params: 57.512768
+18-39-2020 09:39:04 root:INFO:{'dataset_name': 'palmprintv1', 'batch_size': 2, 'lr': 0.01, 'resume': False, 'model_name': 'facenet'}
+18-39-2020 09:39:52 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+18-46-2020 09:46:02 root:INFO:{'lr': 0.01, 'batch_size': 2, 'resume': False, 'dataset_name': 'palmprintv1', 'model_name': 'facenet'}
+18-46-2020 09:46:08 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+18-50-2020 01:50:37 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-51-2020 01:51:04 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-36-2020 10:36:29 root:INFO:{'resume': False, 'lr': 0.01, 'batch_size': 2, 'dataset_name': 'palmprintv1', 'model_name': 'facenet'}
+18-36-2020 10:36:37 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+18-50-2020 10:50:34 root:INFO:{'batch_size': 2, 'resume': False, 'lr': 0.01, 'dataset_name': 'palmprintv1', 'model_name': 'facenet'}
+18-50-2020 10:50:44 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+18-13-2020 11:13:19 root:INFO:{'model_name': 'facenet', 'resume': False, 'batch_size': 2, 'dataset_name': 'palmprintv1', 'lr': 0.01}
+18-15-2020 11:15:18 root:INFO:{'batch_size': 2, 'dataset_name': 'palmprintv1', 'resume': False, 'model_name': 'facenet', 'lr': 0.01}
+18-17-2020 11:17:49 root:INFO:{'model_name': 'facenet', 'resume': False, 'batch_size': 2, 'lr': 0.01, 'dataset_name': 'palmprintv1'}
+18-19-2020 11:19:46 root:INFO:{'dataset_name': 'palmprintv1', 'lr': 0.01, 'model_name': 'facenet', 'batch_size': 2, 'resume': False}
+18-20-2020 11:20:33 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+18-46-2020 06:46:22 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-46-2020 06:46:52 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-49-2020 06:49:38 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-49-2020 06:49:39 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-51-2020 06:51:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-53-2020 06:53:43 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-54-2020 06:54:31 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-56-2020 06:56:10 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-02-2020 07:02:54 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-05-2020 07:05:13 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-07-2020 07:07:19 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-07-2020 07:07:23 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-15-2020 16:15:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-15-2020 16:15:58 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-17-2020 16:17:28 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-17-2020 16:17:31 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+18-18-2020 16:18:22 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+18-18-2020 16:18:26 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-58-2020 09:58:04 root:INFO:{'resume': False, 'model_name': 'facenet', 'lr': 0.01, 'dataset_name': 'palmprintv1', 'batch_size': 2}
+19-58-2020 09:58:21 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+19-00-2020 10:00:05 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'resume': False, 'dataset_name': 'palmprintv1'}
+19-00-2020 10:00:38 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+19-18-2020 02:18:31 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-19-2020 02:19:34 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-16-2020 04:16:34 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-16-2020 04:16:38 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-02-2020 05:02:22 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-03-2020 05:03:35 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-05-2020 05:05:51 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-05-2020 05:05:55 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-07-2020 05:07:49 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-07-2020 05:07:53 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-10-2020 05:10:29 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-10-2020 05:10:33 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-12-2020 07:12:46 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-14-2020 07:14:00 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-16-2020 07:16:21 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-16-2020 07:16:25 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-20-2020 07:20:57 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-21-2020 07:21:01 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-24-2020 07:24:00 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-24-2020 07:24:04 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-25-2020 15:25:46 root:INFO:{'resume': False, 'model_name': 'facenet', 'batch_size': 2, 'lr': 0.01, 'dataset_name': 'palmprintv1'}
+19-30-2020 07:30:40 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-30-2020 07:30:45 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-33-2020 15:33:12 root:INFO:{'dataset_name': 'palmprintv1', 'resume': False, 'model_name': 'facenet', 'batch_size': 2, 'lr': 0.01}
+19-34-2020 15:34:36 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+19-36-2020 15:36:40 root:INFO:{'lr': 0.01, 'model_name': 'facenet', 'resume': False, 'dataset_name': 'palmprintv1', 'batch_size': 2}
+19-37-2020 15:37:29 root:INFO:model: facenet, flops: 1.983250944, params: 15.40375
+19-38-2020 15:38:18 urllib3.connectionpool:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.ml', port=443): Read timed out. (read timeout=10)",)': /clientlib/status-report/update
+19-39-2020 07:39:03 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-39-2020 07:39:08 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-43-2020 07:43:30 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+19-43-2020 07:43:34 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-25-2020 08:25:29 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-25-2020 08:25:33 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-30-2020 09:30:15 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-30-2020 09:30:19 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-35-2020 09:35:02 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-35-2020 09:35:06 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-50-2020 09:50:49 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-50-2020 09:50:53 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-52-2020 09:52:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-52-2020 09:52:12 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-53-2020 09:53:20 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-53-2020 09:53:24 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-56-2020 09:56:40 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-56-2020 09:56:44 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-58-2020 09:58:57 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-59-2020 09:59:01 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-02-2020 10:02:26 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-02-2020 10:02:30 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-04-2020 10:04:50 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-04-2020 10:04:53 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-07-2020 10:07:16 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-07-2020 10:07:20 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-10-2020 10:10:29 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-10-2020 10:10:32 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-14-2020 10:14:33 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-14-2020 10:14:37 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-16-2020 10:16:25 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-16-2020 10:16:29 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-17-2020 10:17:43 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-17-2020 10:17:47 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+19-20-2020 10:20:01 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+19-20-2020 10:20:05 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-52-2020 01:52:24 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-53-2020 01:53:38 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-55-2020 01:55:42 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-57-2020 01:57:40 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-00-2020 02:00:44 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-01-2020 02:01:47 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-27-2020 02:27:55 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-29-2020 02:29:09 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-32-2020 02:32:28 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-34-2020 02:34:10 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-35-2020 02:35:59 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-36-2020 02:36:03 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-01-2020 04:01:32 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-01-2020 04:01:37 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-10-2020 06:10:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-10-2020 06:10:12 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-23-2020 06:23:25 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-23-2020 06:23:29 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-24-2020 06:24:09 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-24-2020 06:24:13 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-27-2020 06:27:09 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-27-2020 06:27:13 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-29-2020 06:29:36 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-29-2020 06:29:40 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-34-2020 06:34:53 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-34-2020 06:34:57 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+20-36-2020 06:36:32 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': True}
+20-36-2020 06:36:36 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-32-2020 07:32:47 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-34-2020 07:34:00 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-37-2020 07:37:06 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-37-2020 07:37:10 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-40-2020 07:40:40 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-40-2020 07:40:44 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-44-2020 07:44:07 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-44-2020 07:44:11 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-45-2020 07:45:59 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-46-2020 07:46:03 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-47-2020 07:47:14 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-47-2020 07:47:18 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-50-2020 07:50:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-50-2020 07:50:12 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-52-2020 07:52:12 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-52-2020 07:52:15 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-54-2020 07:54:06 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-54-2020 07:54:09 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-55-2020 07:55:32 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-55-2020 07:55:36 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+22-48-2020 00:48:29 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-50-2020 00:50:23 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-53-2020 00:53:30 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-53-2020 00:53:35 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+22-57-2020 00:57:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-57-2020 00:57:52 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-13-2020 17:13:19 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-14-2020 17:14:07 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+21-39-2020 17:39:13 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+21-39-2020 17:39:17 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+22-49-2020 03:49:08 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-49-2020 03:49:12 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
+22-39-2020 04:39:41 root:INFO:{'lr': 0.01, 'batch_size': 2, 'model_name': 'facenet', 'dataset_name': 'palmprintv1', 'resume': False}
+22-39-2020 04:39:44 root:INFO:model: facenet, flops: 1.9790272, params: 15.394342
