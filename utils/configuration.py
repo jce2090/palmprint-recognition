@@ -26,7 +26,7 @@ def get_configuration():
     parser.add_argument("--lr", default=1e-2)
     # Train params
     parser.add_argument("--model_name", default="facenet")
-    parser.add_argument("--dataset_name", default="palmprintv1")
+    parser.add_argument("--dataset_name", default="palmprint")
     parser.add_argument("--data_root", default="./data/IITD/flip/ROI/")
     parser.add_argument("--epochs", default=5000)
     parser.add_argument("--save_dir", default="./checkpoints/")
@@ -45,6 +45,7 @@ def get_configuration():
     parser.add_argument("--batch_size", default=2)
     parser.add_argument("--classes", default=2)
     parser.add_argument("--train_img_size", default=(227, 227))
+    parser.add_argument("--num_classes", default=230)
 
     return parser.parse_args()
 

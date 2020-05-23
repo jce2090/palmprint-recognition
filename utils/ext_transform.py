@@ -7,7 +7,9 @@
 """
 import torch
 import numpy as np
+from PIL import Image
 import torchvision.transforms.functional as F
+import torchvision.transforms as transforms
 
 
 class ToTensor:
@@ -44,3 +46,30 @@ class ToTensor:
                 label = torch.from_numpy(label).float()
 
             return [image, label, sample[2]]
+
+
+def ext_traindata_transform():
+    """Transform for train data
+    """
+    return transforms.Compose(
+        [
+            transforms.ToPILImage(),
+            transforms.Resize((227, 227), interpolation=Image.BILINEAR),
+            transforms.RandomHorizontalFlip(),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5]),
+        ]
+    )
+
+
+def ext_testdata_transform():
+    """Transform for test data
+    """
+    return transforms.Compose(
+        [
+            transforms.ToPILImage(),
+            transforms.Resize((227, 227), interpolation=Image.BILINEAR),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5]),
+        ]
+    )
