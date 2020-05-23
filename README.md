@@ -51,10 +51,10 @@ By default, model_name is facenet, dataset_name is palmprint_v1. The input image
 ​	pair distance between two classes,  red represents the distance in similar classes, green represents the distance between different classes.
 
 ```
-             Epoch0                                               Epoch1000										Epoch5000
+                   Epoch0                                               Epoch1000										Epoch5000
 ```
 
-<img src="logs/f2d368d64ebc413192be6560e533c7df/0.PNG" alt="0" style="zoom: 20%;" /><img src="logs/f2d368d64ebc413192be6560e533c7df/1000.PNG" alt="1000" style="zoom:20%;" /><img src="logs/f2d368d64ebc413192be6560e533c7df/5000.PNG" alt="5000" style="zoom:20%;" />
+![](logs/f2d368d64ebc413192be6560e533c7df/distance.PNG)
 
 
 
