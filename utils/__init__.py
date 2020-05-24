@@ -6,5 +6,5 @@
 @Description: file content
 """
 from utils.configuration import get_configuration, setup_training
-from utils.ext_loss import DNHloss, PairwiseDistance, TripletMarginLoss
 from utils.ext_transform import ToTensor
+from utils.ext_loss import DNHloss, PairwiseDistance, TripletMarginLoss
