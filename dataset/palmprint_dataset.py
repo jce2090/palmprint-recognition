@@ -12,7 +12,7 @@ from torch.utils.data import Dataset
 from dataset.dataset_tool import make_triple_img_list
 
 
-class PalmPrintV1Dataset(Dataset):
+class PalmPrintDataset(Dataset):
     """Dataset of palmprint
 
     Arguments:
