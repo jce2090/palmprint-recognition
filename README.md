@@ -4,17 +4,17 @@
 
 ![](logs/f2d368d64ebc413192be6560e533c7df/image-20200522152545541.png)
 
-## Environmental needs
+## Environmental needs(环境)
 
 ​	python3.7,  pytorch1.5,  cuda10.2
 
-## Install dependent libraries
+## Install dependent libraries(安装依赖模块)
 
 ```
 	pip install -r requirements.txt
 ```
 
-## Train
+## Train(训练)
 
 1. Download the IITD palmprint dataset:
 
@@ -26,7 +26,7 @@
 
 By default, model_name is facenet, dataset_name is palmprint_v1. The input images and target mask should be the same format as IITD
 
-## Inference
+## Inference(推理)
 
 ​	You can easily test the accuracy of your dataset via the CIL.
 
@@ -36,7 +36,7 @@ By default, model_name is facenet, dataset_name is palmprint_v1. The input image
 		python inference.py
 ```
 
-## Results
+## Results(结果)
 
 ​	Some training parameters and results are as follows:
 
