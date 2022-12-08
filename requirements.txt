@@ -2,7 +2,7 @@ appdirs==1.4.3
 attrs==19.3.0
 autopep8==1.4.4
 black==19.10b0
-certifi==2020.4.5.1
+certifi==2022.12.7
 chardet==3.0.4
 click==7.1.2
 comet-git-pure==0.19.16
